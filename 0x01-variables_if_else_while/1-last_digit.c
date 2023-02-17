@@ -2,33 +2,30 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Get a random number and print the number
- * and if it is positive, negative, or zero
+ * main - main function to generate a random number
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
-	int a;
+	int num;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	a = n % 10;
-	
-
-	if (a > 5)
+	printf("Last digit of %d is ", n);
+	num = n % 10;
+	if (num > 5)
 	{
-		printf("Last digit of %d is %d and is greater then 5\n", n, a);
+		printf("%d and is greater then 5\n", num);
 	}
-
-	else if (a == 0)
+	else if ((num < 6) && (num < 0))
 	{
-		printf("Last digit of %d is %d and is 0\n", n, a);
+		printf("%d and is 0\n", num);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less then 6 and not 0\n", n, a);
+		printf("%d and is less then 6 and not 0\n", num);
 	}
 	return (0);
 }
