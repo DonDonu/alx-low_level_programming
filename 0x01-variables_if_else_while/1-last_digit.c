@@ -1,3 +1,9 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 /**
  * main - Prints the last digit of a randomly generated number
  * and whether it is greater then 5, less then 6, 0.
