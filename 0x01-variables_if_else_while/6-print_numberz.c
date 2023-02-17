@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - prints single digits in base 10
@@ -15,3 +15,4 @@ int main(void)
 
 	return (0);
 }
+
